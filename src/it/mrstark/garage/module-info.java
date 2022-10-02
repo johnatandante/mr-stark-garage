@@ -1,0 +1,6 @@
+/**
+ * @author Dante
+ *
+ */
+module MrStarkGarage {
+}
