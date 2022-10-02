@@ -1,6 +1,5 @@
 package it.mrstark.garage.entities;
 
-import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -15,6 +14,25 @@ public abstract class ElementoMagazzino implements Record {
 	private float costo = 0.0f;
 	private float prezzo = 0.0f;
 	private StatoRecord stato = StatoRecord.ACQUISTATO;
+	
+	public ElementoMagazzino(
+		 String descrizione,
+			String codice,
+			LocalDate dataAcquisto,
+			LocalDate dataVendita,
+			float costo,
+			float prezzo,
+			StatoRecord stato) {
+		
+		this.descrizione = descrizione;
+		this.codice = codice;
+		this.dataAcquisto = dataAcquisto;
+		this.dataVendita = dataVendita;
+		this.costo = costo;
+		this.prezzo = prezzo;
+		this.stato = stato;
+		
+	}
 	
 	@Override
 	public String getDescrizione() {
